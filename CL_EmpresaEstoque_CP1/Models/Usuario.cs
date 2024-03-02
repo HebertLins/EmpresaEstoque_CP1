@@ -6,11 +6,23 @@ using System.Threading.Tasks;
 
 namespace CL_EmpresaEstoque_CP1.Models
 {
-    internal class Usuario
+    public class Usuario
     {
-        private string id_usuario;
-        private string login_usuario;
-        private string senha_usuario;
-        private string permissao_usuario;
+        public int id_usuario { get; set; }
+        public string login_usuario { get; set; }
+        public string senha_usuario { get; set; }
+        public string permissao_usuario { get; set; }
+
+        public Usuario()
+        {
+        }
+
+        public Usuario(int id_usuario, string login_usuario, string senha_usuario, string permissao_usuario)
+        {
+            this.id_usuario = id_usuario;
+            this.login_usuario = login_usuario;
+            this.senha_usuario = senha_usuario;
+            this.permissao_usuario = permissao_usuario;
+        }
     }
 }
