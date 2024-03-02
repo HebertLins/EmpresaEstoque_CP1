@@ -34,12 +34,12 @@ namespace CL_EmpresaEstoque_CP1.Models
 
 
         // Exemplo de Métodos Protected, Internal, Private. Utilizei eles para comporem um método público que eu posso ultilizar na minha program
-        protected void String1Protected()
+        protected static void String1Protected()
         {
             Console.WriteLine("Lista de produtos:");
         }
 
-        private void MForEachPrivate(List<Produto> listaProdutos)
+        private static void MForEachPrivate(List<Produto> listaProdutos)
         {
             foreach (Produto produto in listaProdutos)
             {
@@ -47,13 +47,13 @@ namespace CL_EmpresaEstoque_CP1.Models
             }
         }
 
-        internal void String2Internal()
+        internal static void String2Internal()
         {
             Console.WriteLine("Chegamos ao final da Lista!");
         }
 
 
-        public void MostraTudo(List<Produto> listaProdutos)
+        public static void MostraTudo(List<Produto> listaProdutos)
         {
             String1Protected();
 

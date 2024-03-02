@@ -53,10 +53,10 @@ internal class Program
                     //Execução Estrutura de decisão
                     if (usuario.login_usuario.Equals(usu) && usuario.senha_usuario.Equals(senha))
                     {
+                        Console.WriteLine("Login realizado com sucesso!");
                         //Execução Processo, Estoque, Produtos e TipoProduto
                         do
                         {
-                            Console.WriteLine("Login realizado com sucesso!");
                             Console.WriteLine("Escolha entre uma das opções abaixo:");
                             Console.WriteLine("1 - Criar uma lista de produtos e inserir no estoque");
                             Console.WriteLine("2 - Listar todos produtos cadastrados");
