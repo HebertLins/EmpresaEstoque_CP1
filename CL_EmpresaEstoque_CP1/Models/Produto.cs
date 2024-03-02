@@ -32,19 +32,35 @@ namespace CL_EmpresaEstoque_CP1.Models
 
         }
 
-        protected void MetodoPrivado()
+
+        // Exemplo de Métodos Protected, Internal, Private. Utilizei eles para comporem um método público que eu posso ultilizar na minha program
+        protected void String1Protected()
         {
             Console.WriteLine("Lista de produtos:");
         }
 
-
-        public static void MostraTudo(List<Produto> listaProdutos)
+        private void MForEachPrivate(List<Produto> listaProdutos)
         {
-
             foreach (Produto produto in listaProdutos)
             {
                 Console.WriteLine($"ID: {produto.id_produto}, Nome: {produto.nm_produto}, Quantidade: {produto.qtd_produto}, Preço: {produto.preco_produto}, Descrição: {produto.desc_produto}");
             }
+        }
+
+        internal void String2Internal()
+        {
+            Console.WriteLine("Chegamos ao final da Lista!");
+        }
+
+
+        public void MostraTudo(List<Produto> listaProdutos)
+        {
+            String1Protected();
+
+            MForEachPrivate(listaProdutos);
+
+            String2Internal();
+
         }
 
 
